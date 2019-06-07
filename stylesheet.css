@@ -1,0 +1,138 @@
+html {
+	margin-top: 20px;
+	margin-left: 10px;
+	font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+
+label {
+	color: #767676 !important;
+}
+
+ul, li {
+	list-style-type: none;
+}
+
+
+#display {
+	display: none;
+	margin-left: 30px;
+}
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+.tab {
+	display: block;
+	width: 125px;
+	height: 30px;
+	border: 0px;
+	background: white;
+	border: 1px solid #cccccc;
+	text-align: center;
+	line-height: 22pt;
+	float: left;
+	cursor: pointer;
+	font-family: Lato;
+	font-size: 11pt;
+	font-weight: 700;
+	color: #555;
+}
+
+.tab:first-child {
+	border-radius: 4px 0 0 4px;
+}
+
+.tab:nth-child(2) {
+	border-radius: 0 4px 4px 0;
+	border-left: 0px;
+}
+
+.tab:hover {
+	background: #e6e6e6;
+}
+
+.tab.active {
+	background: #2185d0;
+	border-color: #2185d0;
+	color: white;
+}
+
+.head-link > a {
+	padding: 0;
+	color: black;
+	font-size: 12pt;
+	font-family: Tahoma, Arial;
+}
+
+.form-control {
+	border: 1px solid rgba(0,0,0,0.20);
+	border-bottom: 2px solid rgba(0,0,0,0.20);
+	border-radius: 4px;
+	padding: 5px;
+	margin-bottom: 15px;
+	font-size: 12pt;
+	float: right;
+}
+
+input[type=text].groupby {
+	border: 0px !important;
+	border-bottom: 1px solid !important;
+	border-radius: 1 !important;
+	border-color: rgba(0,0,0,0.20) !important;
+	width: 55% !important;
+	font-size: 12pt !important;
+	text-align: center;
+}
+
+input[type=text].groupby:hover {
+	border-bottom-color: #b2b3b3 !important;
+}
+
+input[type=text].groupby:focus {
+	border-bottom-color: #96c8da !important;
+}
+
+td:first-child {
+	text-align: left;
+}
+
+td:nth-child(4) {
+	text-align: left;
+}
+
+td:nth-child(n+7):nth-child(-n+11){
+	text-align: right;
+}
+
+td:nth-child(n+7):nth-child(-n+10)::before {
+	text-align: left;
+	content: "$";
+}
+
+.table > tbody > tr.info > td {
+	text-align: center;
+}
+
+#data-table {
+	display: block;
+	text-align: center;
+	min-height: 300px;
+}
+
+#data-table > tr {
+	text-align: left;
+}
+
+#loading-icon {
+	width: 75px;
+	display: inline-block;
+}
+/*
+.naics_three, .naics_four, .naics_five, .naics_six {
+	display: none !important;
+}*/
